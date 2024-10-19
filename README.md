@@ -32,3 +32,58 @@
 ```bash
 git clone <repo-link>
 cd new_chatbot
+```
+
+2. Set Up the Virtual Environment
+
+Using conda, create and activate a new environment for the project:
+
+```bash
+conda create -n new_env python=3.10
+conda activate new_env
+```
+
+3. Install Required Packages
+
+Run the following command to install all necessary libraries:
+
+```bash
+pip install streamlit langchain langchain[community] python-dotenv google-generativeai
+```
+4. API Key Configuration
+
+To use Google’s Gemini-Pro AI model, you need an API key. Create a .env file in the project root and add your Google API key as follows:
+
+```bash
+GOOGLE_API_KEY=your_google_api_key_here
+```
+
+5. Run the Application
+
+To start the chatbot, use the following command:
+
+```bash
+streamlit run app.py
+```
+
+Once the app starts, it will launch a Streamlit interface in your browser where you can interact with the chatbot.
+
+How It Works
+
+- Upon starting the app, the chatbot greets users and invites them to share how they are feeling.
+- Users can type their messages in the input field.
+- The chatbot provides empathetic responses, suggesting coping strategies and helpful resources without providing medical advice or diagnoses.
+- The conversation stays focused on supporting the user while encouraging them to seek professional help if needed.
+
+Example Interaction
+
+User: “I’m feeling really stressed lately.”
+
+Gemini Pro: “I’m really sorry to hear you’re feeling this way. Stress can be overwhelming, but sometimes taking a step back and practicing some deep breathing exercises can help. Would you like me to guide you through one?”
+
+Libraries Used
+
+- Streamlit: For building the web-based interface.
+- Google Generative AI (Gemini-Pro): For conversational AI responses.
+- dotenv: For environment variable management.
+- LangChain: For optional advanced interaction flows.
