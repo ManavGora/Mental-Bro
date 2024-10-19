@@ -1,5 +1,7 @@
 # Gemini Pro - Mental Health ChatBot
 
+![](https://github.com/ManavGora/Mental-Bro/blob/main/img.png)
+
 ## Overview
 
 **Gemini Pro** is an empathetic and supportive chatbot designed to help users with their mental health concerns. It uses Google’s Gemini-Pro AI model to engage in thoughtful conversations, offering coping strategies, resources, and a listening ear to users. This chatbot runs on **Streamlit**, providing an interactive, web-based interface for easy user interaction.
